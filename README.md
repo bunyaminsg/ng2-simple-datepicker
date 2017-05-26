@@ -1,0 +1,62 @@
+# ng-simple-datepicker
+
+## Install
+
+```
+    npm install ng-simple-datepicker --save
+```
+
+## Usage
+
+`app.module.ts`
+
+```
+    ...
+
+    import { DatePickerDirective } from './date-picker/date-picker.directive';
+    import { DatePickerComponent } from './date-picker/date-picker.component';
+
+    @NgModule({
+      declarations: [
+	...,
+        DatePickerDirective,
+        DatePickerComponent
+      ],
+        ...
+    })
+    export class AppModule { }
+```
+
+In component:
+
+```
+    @Component({
+        ...
+    })
+    export class ...Component {
+      ...
+      date: string;
+    
+      constructor() {
+        this.date = (new Date()).toISOString().split('T')[0]; // DD-MM-YYYY
+      }
+    
+      handleDateUpdated(newDate: Date): void {
+        // do something with date
+      }
+    }
+```
+
+In template html:
+
+```
+     <div appDatePicker>
+          <input [(ngModel)]="date" placeholder="DD-MM-YYYY">
+          <app-date-picker [date]="date" (dateUpdated)="handleDateUpdated($event)"></app-date-picker>
+    </div>
+```
+
+## Styling
+
+You can override the rules in the `date-picker.component.css` for custom styling.
+

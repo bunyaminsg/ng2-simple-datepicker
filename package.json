@@ -1,0 +1,27 @@
+{
+  "name": "ng2-simple-datepicker",
+  "version": "1.0.0",
+  "description": "Angular2+ simple datepicker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunyaminsg/ng2-simple-datepicker.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "datepicker",
+    "date",
+    "input"
+  ],
+  "author": "Bunyamin Sarigul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bunyaminsg/ng2-simple-datepicker/issues"
+  },
+  "homepage": "https://github.com/bunyaminsg/ng2-simple-datepicker#readme"
+}
